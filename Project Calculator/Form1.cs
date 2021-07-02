@@ -12,9 +12,7 @@ namespace Project_Calculator
 {
     public partial class Form1 : Form
     {
-        String operation = "";
-        Boolean isOperationsPressed = false;
-        String Num1 = "";
+        ClassA calc = new ClassA();
         public Form1()
         {
             InitializeComponent();
@@ -77,48 +75,38 @@ namespace Project_Calculator
 
         private void BtnPlus_Click(object sender, EventArgs e)
         {
-            operation = "+";
-            isOperationsPressed = true;
+            calc.operation = "+";
+            calc.isOperationsPressed = true;
         }
 
         private void BtnMinus_Click(object sender, EventArgs e)
         {
-            operation = "-";
-            isOperationsPressed = true;
+            calc.operation. = "-";
+            calc.isOperationsPressed = true;
         }
 
         private void BtnEquals_Click(object sender, EventArgs e)
         {
-            if (operation.Equals("+"))
+            if (calc.operation.Equals("+"))
             {
-                Add();
+                calc.Add();
             }
-            if (operation.Equals("-"))
+            if (calc.operation.Equals("-"))
             {
-                Subtract();
+                calc.Subtract();
             }
-        }
-
-        private void Add()
-        {
-            DsplyTxtBx.Text = (float.Parse(Num1) + float.Parse(DsplyTxtBx.Text)).ToString();
-        }
-
-        private void Subtract()
-        {
-            DsplyTxtBx.Text = (float.Parse(Num1) - float.Parse(DsplyTxtBx.Text)).ToString();
         }
 
         private void AppendDisplay(String number)
         {
-            if (isOperationsPressed)
+            if (calc.isOperationsPressed)
             {
-                Num1 = DsplyTxtBx.Text;
+                calc.Num1 = DsplyTxtBx.Text;
                 DsplyTxtBx.Text = "";
             }
 
             DsplyTxtBx.Text += number;
-            isOperationsPressed = false;
+            calc.isOperationsPressed = false;
         }
 
         private void Form1_Load(object sender, EventArgs e)
