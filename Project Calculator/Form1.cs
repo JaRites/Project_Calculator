@@ -75,38 +75,42 @@ namespace Project_Calculator
 
         private void BtnPlus_Click(object sender, EventArgs e)
         {
-            calc.operation = "+";
-            calc.isOperationsPressed = true;
+            calc.Operation = "+";
+            calc.IsOperationsPressed = true;
         }
 
         private void BtnMinus_Click(object sender, EventArgs e)
         {
-            calc.operation. = "-";
-            calc.isOperationsPressed = true;
+            calc.Operation = "-";
+            calc.IsOperationsPressed = true;
         }
 
         private void BtnEquals_Click(object sender, EventArgs e)
         {
-            if (calc.operation.Equals("+"))
+            if (calc.Operation.Equals("+"))
             {
+                calc.Num2a = DsplyTxtBx.Text;
                 calc.Add();
+                DsplyTxtBx.Text = calc.Num2a;
             }
-            if (calc.operation.Equals("-"))
+            if (calc.Operation.Equals("-"))
             {
+                calc.Num2a = DsplyTxtBx.Text;
                 calc.Subtract();
+                DsplyTxtBx.Text = calc.Num2a;
             }
         }
 
         private void AppendDisplay(String number)
         {
-            if (calc.isOperationsPressed)
+            if (calc.IsOperationsPressed)
             {
-                calc.Num1 = DsplyTxtBx.Text;
+                calc.Num1a = DsplyTxtBx.Text;
                 DsplyTxtBx.Text = "";
             }
 
             DsplyTxtBx.Text += number;
-            calc.isOperationsPressed = false;
+            calc.IsOperationsPressed = false;
         }
 
         private void Form1_Load(object sender, EventArgs e)
