@@ -97,6 +97,16 @@ namespace Project_Calculator
             calc.IsOperationsPressed = true;
         }
 
+        private void BtnPosNeg_Click(object sender, EventArgs e)
+        {
+            DsplyTxtBx.Text = "-";
+
+            if (DsplyTxtBx.Equals("-"))
+            {
+                DsplyTxtBx.Text = "";
+            }
+        }
+
         private void BtnEquals_Click(object sender, EventArgs e)
         {
             if (calc.Operation.Equals("+"))
@@ -143,7 +153,5 @@ namespace Project_Calculator
         {
 
         }
-
-
     }
 }

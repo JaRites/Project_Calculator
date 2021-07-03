@@ -252,6 +252,7 @@ namespace Project_Calculator
             this.BtnPosNeg.TabIndex = 19;
             this.BtnPosNeg.Text = "+/-";
             this.BtnPosNeg.UseVisualStyleBackColor = true;
+            this.BtnPosNeg.Click += new System.EventHandler(this.BtnPosNeg_Click);
             // 
             // BtnBckSpc
             // 
