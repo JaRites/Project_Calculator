@@ -205,6 +205,7 @@ namespace Project_Calculator
             this.BtnMultiply.TabIndex = 14;
             this.BtnMultiply.Text = "X";
             this.BtnMultiply.UseVisualStyleBackColor = true;
+            this.BtnMultiply.Click += new System.EventHandler(this.BtnMultiply_Click);
             // 
             // BtnDivide
             // 

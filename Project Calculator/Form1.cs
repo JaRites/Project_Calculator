@@ -85,6 +85,12 @@ namespace Project_Calculator
             calc.IsOperationsPressed = true;
         }
 
+        private void BtnMultiply_Click(object sender, EventArgs e)
+        {
+            calc.Operation = "*";
+            calc.IsOperationsPressed = true;
+        }
+
         private void BtnEquals_Click(object sender, EventArgs e)
         {
             if (calc.Operation.Equals("+"))
@@ -93,10 +99,17 @@ namespace Project_Calculator
                 calc.Add();
                 DsplyTxtBx.Text = calc.Num2a;
             }
+
             if (calc.Operation.Equals("-"))
             {
                 calc.Num2a = DsplyTxtBx.Text;
                 calc.Subtract();
+                DsplyTxtBx.Text = calc.Num2a;
+            }
+            if (calc.Operation.Equals("*"))
+            {
+                calc.Num2a = DsplyTxtBx.Text;
+                calc.Multiply();
                 DsplyTxtBx.Text = calc.Num2a;
             }
         }
@@ -118,6 +131,6 @@ namespace Project_Calculator
 
         }
 
-        
+
     }
 }
