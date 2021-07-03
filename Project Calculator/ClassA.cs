@@ -32,5 +32,10 @@ namespace Project_Calculator
         {
             Num2a = (float.Parse(Num1a) * float.Parse(Num2a)).ToString();
         }
+
+        public void Divide()
+        {
+            Num2a = (float.Parse(Num1a) / float.Parse(Num2a)).ToString();
+        }
     }
 }

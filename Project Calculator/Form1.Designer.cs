@@ -215,6 +215,7 @@ namespace Project_Calculator
             this.BtnDivide.TabIndex = 15;
             this.BtnDivide.Text = "/";
             this.BtnDivide.UseVisualStyleBackColor = true;
+            this.BtnDivide.Click += new System.EventHandler(this.BtnDivide_Click);
             // 
             // ButtonM
             // 

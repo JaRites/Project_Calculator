@@ -91,6 +91,12 @@ namespace Project_Calculator
             calc.IsOperationsPressed = true;
         }
 
+        private void BtnDivide_Click(object sender, EventArgs e)
+        {
+            calc.Operation = "/";
+            calc.IsOperationsPressed = true;
+        }
+
         private void BtnEquals_Click(object sender, EventArgs e)
         {
             if (calc.Operation.Equals("+"))
@@ -106,10 +112,17 @@ namespace Project_Calculator
                 calc.Subtract();
                 DsplyTxtBx.Text = calc.Num2a;
             }
+
             if (calc.Operation.Equals("*"))
             {
                 calc.Num2a = DsplyTxtBx.Text;
                 calc.Multiply();
+                DsplyTxtBx.Text = calc.Num2a;
+            }
+            if (calc.Operation.Equals("/"))
+            {
+                calc.Num2a = DsplyTxtBx.Text;
+                calc.Divide();
                 DsplyTxtBx.Text = calc.Num2a;
             }
         }
