@@ -316,7 +316,7 @@ namespace Project_Calculator
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuText;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(623, 737);
+            this.ClientSize = new System.Drawing.Size(647, 717);
             this.Controls.Add(this.DsplyTxtBx);
             this.Controls.Add(this.BtnClear);
             this.Controls.Add(this.BtnBckSpc);
@@ -341,10 +341,9 @@ namespace Project_Calculator
             this.Controls.Add(this.BtnNmb2);
             this.Controls.Add(this.BtnNmb1);
             this.ForeColor = System.Drawing.Color.Red;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Form1";
             this.Text = "Calculator";
-            this.TransparencyKey = System.Drawing.Color.Transparent;
+            this.TransparencyKey = System.Drawing.Color.LightPink;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
