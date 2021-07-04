@@ -167,6 +167,9 @@ namespace Project_Calculator
 
         }
 
-
+        private void BtnClear_Click(object sender, EventArgs e)
+        {
+            DsplyTxtBx.Text = "";
+        }
     }
 }

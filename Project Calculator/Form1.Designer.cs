@@ -272,6 +272,7 @@ namespace Project_Calculator
             this.BtnClear.TabIndex = 21;
             this.BtnClear.Text = "C";
             this.BtnClear.UseVisualStyleBackColor = true;
+            this.BtnClear.Click += new System.EventHandler(this.BtnClear_Click);
             // 
             // DsplyTxtBx
             // 
