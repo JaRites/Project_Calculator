@@ -178,7 +178,6 @@ namespace Project_Calculator
             {
                 DsplyTxtBx.Text = DsplyTxtBx.Text.Remove(DsplyTxtBx.Text.Length - 1, 1);
             }
-
         }
     }
 }
