@@ -263,6 +263,7 @@ namespace Project_Calculator
             this.BtnBckSpc.TabIndex = 20;
             this.BtnBckSpc.Text = "Del";
             this.BtnBckSpc.UseVisualStyleBackColor = true;
+            this.BtnBckSpc.Click += new System.EventHandler(this.BtnBckSpc_Click);
             // 
             // BtnClear
             // 

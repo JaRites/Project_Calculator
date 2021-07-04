@@ -171,5 +171,14 @@ namespace Project_Calculator
         {
             DsplyTxtBx.Text = "";
         }
+
+        private void BtnBckSpc_Click(object sender, EventArgs e)
+        {
+            if (DsplyTxtBx.Text.Length > 0)
+            {
+                DsplyTxtBx.Text = DsplyTxtBx.Text.Remove(DsplyTxtBx.Text.Length - 1, 1);
+            }
+
+        }
     }
 }
