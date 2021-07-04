@@ -37,5 +37,10 @@ namespace Project_Calculator
         {
             Num2a = (float.Parse(Num1a) / float.Parse(Num2a)).ToString();
         }
+
+        public void Percent()
+        {
+            Num2a = (float.Parse(Num1a) * (float.Parse(Num2a)) / 100).ToString();
+        }
     }
 }

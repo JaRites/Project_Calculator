@@ -243,6 +243,7 @@ namespace Project_Calculator
             this.BtbPrcnt.TabIndex = 18;
             this.BtbPrcnt.Text = "%";
             this.BtbPrcnt.UseVisualStyleBackColor = true;
+            this.BtbPrcnt.Click += new System.EventHandler(this.BtbPrcnt_Click);
             // 
             // BtnPosNeg
             // 

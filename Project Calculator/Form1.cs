@@ -107,6 +107,12 @@ namespace Project_Calculator
             }
         }
 
+        private void BtbPrcnt_Click(object sender, EventArgs e)
+        {
+            calc.Operation = "%";
+            calc.IsOperationsPressed = true;
+        }
+
         private void BtnEquals_Click(object sender, EventArgs e)
         {
             if (calc.Operation.Equals("+"))
@@ -135,6 +141,13 @@ namespace Project_Calculator
                 calc.Divide();
                 DsplyTxtBx.Text = calc.Num2a;
             }
+
+            if (calc.Operation.Equals("%"))
+            {
+                calc.Num2a = DsplyTxtBx.Text;
+                calc.Percent();
+                DsplyTxtBx.Text = calc.Num2a;
+            }
         }
 
         private void AppendDisplay(String number)
@@ -153,5 +166,7 @@ namespace Project_Calculator
         {
 
         }
+
+
     }
 }
