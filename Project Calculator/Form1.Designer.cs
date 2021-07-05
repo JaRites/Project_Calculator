@@ -341,6 +341,7 @@ namespace Project_Calculator
             this.Controls.Add(this.BtnNmb2);
             this.Controls.Add(this.BtnNmb1);
             this.ForeColor = System.Drawing.Color.Red;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Calculator";
             this.TransparencyKey = System.Drawing.Color.LightPink;
