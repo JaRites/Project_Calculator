@@ -243,6 +243,7 @@ namespace Project_Calculator
             this.ButtonM.TabIndex = 16;
             this.ButtonM.Text = "M+";
             this.ButtonM.UseVisualStyleBackColor = false;
+
             // 
             // BtnMminus
             // 

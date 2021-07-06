@@ -1,7 +1,6 @@
 C:\Users\rites\source\repos\Project Calculator\Project Calculator\bin\Debug\Project Calculator.exe.config
 C:\Users\rites\source\repos\Project Calculator\Project Calculator\bin\Debug\Project Calculator.exe
 C:\Users\rites\source\repos\Project Calculator\Project Calculator\bin\Debug\Project Calculator.pdb
-C:\Users\rites\source\repos\Project Calculator\Project Calculator\obj\Debug\Project Calculator.csproj.AssemblyReference.cache
 C:\Users\rites\source\repos\Project Calculator\Project Calculator\obj\Debug\Project_Calculator.Form1.resources
 C:\Users\rites\source\repos\Project Calculator\Project Calculator\obj\Debug\Project_Calculator.Properties.Resources.resources
 C:\Users\rites\source\repos\Project Calculator\Project Calculator\obj\Debug\Project Calculator.csproj.GenerateResource.cache

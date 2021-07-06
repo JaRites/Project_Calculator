@@ -18,59 +18,141 @@ namespace Project_Calculator
             InitializeComponent();
         }
 
+        private void DsplyTxtBx_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void BtnNmb1_Click(object sender, EventArgs e)
         {
-            AppendDisplay("1");
+            if (calc.IsOperationsPressed)
+            {
+                calc.Num1a = DsplyTxtBx.Text;
+                DsplyTxtBx.Text = "";
+            }
+
+            DsplyTxtBx.Text += "1";
+            calc.IsOperationsPressed = false;
         }
 
         private void BtnNmb2_Click(object sender, EventArgs e)
         {
-            AppendDisplay("2");
+            if (calc.IsOperationsPressed)
+            {
+                calc.Num1a = DsplyTxtBx.Text;
+                DsplyTxtBx.Text = "";
+            }
+
+            DsplyTxtBx.Text += "2";
+            calc.IsOperationsPressed = false;
         }
 
         private void BtnNmb3_Click(object sender, EventArgs e)
         {
-            AppendDisplay("3");
+            if (calc.IsOperationsPressed)
+            {
+                calc.Num1a = DsplyTxtBx.Text;
+                DsplyTxtBx.Text = "";
+            }
+
+            DsplyTxtBx.Text += "3";
+            calc.IsOperationsPressed = false;
         }
 
         private void BtnNmb4_Click(object sender, EventArgs e)
         {
-            AppendDisplay("4");
+            if (calc.IsOperationsPressed)
+            {
+                calc.Num1a = DsplyTxtBx.Text;
+                DsplyTxtBx.Text = "";
+            }
+
+            DsplyTxtBx.Text += "4";
+            calc.IsOperationsPressed = false;
         }
 
         private void BtnNmb5_Click(object sender, EventArgs e)
         {
-            AppendDisplay("5");
+            if (calc.IsOperationsPressed)
+            {
+                calc.Num1a = DsplyTxtBx.Text;
+                DsplyTxtBx.Text = "";
+            }
+
+            DsplyTxtBx.Text += "5";
+            calc.IsOperationsPressed = false;
         }
 
         private void BtnNmb6_Click(object sender, EventArgs e)
         {
-            AppendDisplay("6");
+            if (calc.IsOperationsPressed)
+            {
+                calc.Num1a = DsplyTxtBx.Text;
+                DsplyTxtBx.Text = "";
+            }
+
+            DsplyTxtBx.Text += "6";
+            calc.IsOperationsPressed = false;
         }
 
         private void BtnNmb7_Click(object sender, EventArgs e)
         {
-            AppendDisplay("7");
+            if (calc.IsOperationsPressed)
+            {
+                calc.Num1a = DsplyTxtBx.Text;
+                DsplyTxtBx.Text = "";
+            }
+
+            DsplyTxtBx.Text += "7";
+            calc.IsOperationsPressed = false;
         }
 
         private void BtnNmb8_Click(object sender, EventArgs e)
         {
-            AppendDisplay("8");
+            if (calc.IsOperationsPressed)
+            {
+                calc.Num1a = DsplyTxtBx.Text;
+                DsplyTxtBx.Text = "";
+            }
+
+            DsplyTxtBx.Text += "8";
+            calc.IsOperationsPressed = false;
         }
 
         private void BtnNmb9_Click(object sender, EventArgs e)
         {
-            AppendDisplay("9");
+            if (calc.IsOperationsPressed)
+            {
+                calc.Num1a = DsplyTxtBx.Text;
+                DsplyTxtBx.Text = "";
+            }
+
+            DsplyTxtBx.Text += "9";
+            calc.IsOperationsPressed = false;
         }
 
         private void BtnNmb0_Click(object sender, EventArgs e)
         {
-            AppendDisplay("0");
+            if (calc.IsOperationsPressed)
+            {
+                calc.Num1a = DsplyTxtBx.Text;
+                DsplyTxtBx.Text = "";
+            }
+
+            DsplyTxtBx.Text += "0";
+            calc.IsOperationsPressed = false;
         }
 
         private void BtnDecimal_Click(object sender, EventArgs e)
         {
-            AppendDisplay(".");
+            if (calc.IsOperationsPressed)
+            {
+                calc.Num1a = DsplyTxtBx.Text;
+                DsplyTxtBx.Text = "";
+            }
+
+            DsplyTxtBx.Text += ".";
+            calc.IsOperationsPressed = false;
         }
 
         private void BtnPlus_Click(object sender, EventArgs e)
@@ -105,6 +187,7 @@ namespace Project_Calculator
             {
                 DsplyTxtBx.Text = "";
             }
+            calc.IsOperationsPressed = false;
         }
 
         private void BtbPrcnt_Click(object sender, EventArgs e)
@@ -150,17 +233,6 @@ namespace Project_Calculator
             }
         }
 
-        private void AppendDisplay(String number)
-        {
-            if (calc.IsOperationsPressed)
-            {
-                calc.Num1a = DsplyTxtBx.Text;
-                DsplyTxtBx.Text = "";
-            }
-
-            DsplyTxtBx.Text += number;
-            calc.IsOperationsPressed = false;
-        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -170,6 +242,8 @@ namespace Project_Calculator
         private void BtnClear_Click(object sender, EventArgs e)
         {
             DsplyTxtBx.Text = "";
+            calc.Num1a = "";
+            calc.Num2a = "";
         }
 
         private void BtnBckSpc_Click(object sender, EventArgs e)
@@ -179,5 +253,6 @@ namespace Project_Calculator
                 DsplyTxtBx.Text = DsplyTxtBx.Text.Remove(DsplyTxtBx.Text.Length - 1, 1);
             }
         }
+
     }
 }
