@@ -23,161 +23,24 @@ namespace Project_Calculator
 
         }
 
-        private void BtnNmb1_Click(object sender, EventArgs e)
+        private void NumberBtn_Click(object sender, EventArgs e)
         {
-            if (calc.IsOperationsPressed)
-            {
-                calc.Num1a = DsplyTxtBx.Text;
-                DsplyTxtBx.Text = "";
-            }
+            if ((DsplyTxtBx.Text == "0") || (calc.IsOperationsPressed))
+                DsplyTxtBx.Clear();
 
-            DsplyTxtBx.Text += "1";
             calc.IsOperationsPressed = false;
+            Button b = (Button)sender;
+            DsplyTxtBx.Text = DsplyTxtBx.Text + b.Text;
         }
 
-        private void BtnNmb2_Click(object sender, EventArgs e)
+        private void Operation_Click(object sender, EventArgs e)
         {
-            if (calc.IsOperationsPressed)
-            {
-                calc.Num1a = DsplyTxtBx.Text;
-                DsplyTxtBx.Text = "";
-            }
-
-            DsplyTxtBx.Text += "2";
-            calc.IsOperationsPressed = false;
-        }
-
-        private void BtnNmb3_Click(object sender, EventArgs e)
-        {
-            if (calc.IsOperationsPressed)
-            {
-                calc.Num1a = DsplyTxtBx.Text;
-                DsplyTxtBx.Text = "";
-            }
-
-            DsplyTxtBx.Text += "3";
-            calc.IsOperationsPressed = false;
-        }
-
-        private void BtnNmb4_Click(object sender, EventArgs e)
-        {
-            if (calc.IsOperationsPressed)
-            {
-                calc.Num1a = DsplyTxtBx.Text;
-                DsplyTxtBx.Text = "";
-            }
-
-            DsplyTxtBx.Text += "4";
-            calc.IsOperationsPressed = false;
-        }
-
-        private void BtnNmb5_Click(object sender, EventArgs e)
-        {
-            if (calc.IsOperationsPressed)
-            {
-                calc.Num1a = DsplyTxtBx.Text;
-                DsplyTxtBx.Text = "";
-            }
-
-            DsplyTxtBx.Text += "5";
-            calc.IsOperationsPressed = false;
-        }
-
-        private void BtnNmb6_Click(object sender, EventArgs e)
-        {
-            if (calc.IsOperationsPressed)
-            {
-                calc.Num1a = DsplyTxtBx.Text;
-                DsplyTxtBx.Text = "";
-            }
-
-            DsplyTxtBx.Text += "6";
-            calc.IsOperationsPressed = false;
-        }
-
-        private void BtnNmb7_Click(object sender, EventArgs e)
-        {
-            if (calc.IsOperationsPressed)
-            {
-                calc.Num1a = DsplyTxtBx.Text;
-                DsplyTxtBx.Text = "";
-            }
-
-            DsplyTxtBx.Text += "7";
-            calc.IsOperationsPressed = false;
-        }
-
-        private void BtnNmb8_Click(object sender, EventArgs e)
-        {
-            if (calc.IsOperationsPressed)
-            {
-                calc.Num1a = DsplyTxtBx.Text;
-                DsplyTxtBx.Text = "";
-            }
-
-            DsplyTxtBx.Text += "8";
-            calc.IsOperationsPressed = false;
-        }
-
-        private void BtnNmb9_Click(object sender, EventArgs e)
-        {
-            if (calc.IsOperationsPressed)
-            {
-                calc.Num1a = DsplyTxtBx.Text;
-                DsplyTxtBx.Text = "";
-            }
-
-            DsplyTxtBx.Text += "9";
-            calc.IsOperationsPressed = false;
-        }
-
-        private void BtnNmb0_Click(object sender, EventArgs e)
-        {
-            if (calc.IsOperationsPressed)
-            {
-                calc.Num1a = DsplyTxtBx.Text;
-                DsplyTxtBx.Text = "";
-            }
-
-            DsplyTxtBx.Text += "0";
-            calc.IsOperationsPressed = false;
-        }
-
-        private void BtnDecimal_Click(object sender, EventArgs e)
-        {
-            if (calc.IsOperationsPressed)
-            {
-                calc.Num1a = DsplyTxtBx.Text;
-                DsplyTxtBx.Text = "";
-            }
-
-            DsplyTxtBx.Text += ".";
-            calc.IsOperationsPressed = false;
-        }
-
-        private void BtnPlus_Click(object sender, EventArgs e)
-        {
-            calc.Operation = "+";
+            Button b = (Button)sender;
+            calc.Operation = b.Text;
+            calc.Value = float.Parse(DsplyTxtBx.Text);
             calc.IsOperationsPressed = true;
         }
 
-        private void BtnMinus_Click(object sender, EventArgs e)
-        {
-            calc.Operation = "-";
-            calc.IsOperationsPressed = true;
-        }
-
-        private void BtnMultiply_Click(object sender, EventArgs e)
-        {
-            calc.Operation = "*";
-            calc.IsOperationsPressed = true;
-        }
-
-        private void BtnDivide_Click(object sender, EventArgs e)
-        {
-            calc.Operation = "/";
-            calc.IsOperationsPressed = true;
-        }
 
         private void BtnPosNeg_Click(object sender, EventArgs e)
         {
@@ -200,36 +63,26 @@ namespace Project_Calculator
         {
             if (calc.Operation.Equals("+"))
             {
-                calc.Num2a = DsplyTxtBx.Text;
-                calc.Add();
-                DsplyTxtBx.Text = calc.Num2a;
+                DsplyTxtBx.Text = (calc.Value + float.Parse(DsplyTxtBx.Text)).ToString();
             }
 
             if (calc.Operation.Equals("-"))
             {
-                calc.Num2a = DsplyTxtBx.Text;
-                calc.Subtract();
-                DsplyTxtBx.Text = calc.Num2a;
+                DsplyTxtBx.Text = (calc.Value - float.Parse(DsplyTxtBx.Text)).ToString();
             }
 
             if (calc.Operation.Equals("*"))
             {
-                calc.Num2a = DsplyTxtBx.Text;
-                calc.Multiply();
-                DsplyTxtBx.Text = calc.Num2a;
+                DsplyTxtBx.Text = (calc.Value * float.Parse(DsplyTxtBx.Text)).ToString();
             }
             if (calc.Operation.Equals("/"))
             {
-                calc.Num2a = DsplyTxtBx.Text;
-                calc.Divide();
-                DsplyTxtBx.Text = calc.Num2a;
+                DsplyTxtBx.Text = (calc.Value / float.Parse(DsplyTxtBx.Text)).ToString();
             }
 
             if (calc.Operation.Equals("%"))
             {
-                calc.Num2a = DsplyTxtBx.Text;
-                calc.Percent();
-                DsplyTxtBx.Text = calc.Num2a;
+                DsplyTxtBx.Text = (calc.Value * (float.Parse(DsplyTxtBx.Text)/100)).ToString();
             }
         }
 
@@ -242,8 +95,7 @@ namespace Project_Calculator
         private void BtnClear_Click(object sender, EventArgs e)
         {
             DsplyTxtBx.Text = "";
-            calc.Num1a = "";
-            calc.Num2a = "";
+            calc.Value = 0;
         }
 
         private void BtnBckSpc_Click(object sender, EventArgs e)
@@ -253,6 +105,7 @@ namespace Project_Calculator
                 DsplyTxtBx.Text = DsplyTxtBx.Text.Remove(DsplyTxtBx.Text.Length - 1, 1);
             }
         }
+
 
     }
 }

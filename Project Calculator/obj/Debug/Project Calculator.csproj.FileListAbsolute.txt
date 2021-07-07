@@ -7,3 +7,12 @@ C:\Users\rites\source\repos\Project Calculator\Project Calculator\obj\Debug\Proj
 C:\Users\rites\source\repos\Project Calculator\Project Calculator\obj\Debug\Project Calculator.csproj.CoreCompileInputs.cache
 C:\Users\rites\source\repos\Project Calculator\Project Calculator\obj\Debug\Project Calculator.exe
 C:\Users\rites\source\repos\Project Calculator\Project Calculator\obj\Debug\Project Calculator.pdb
+C:\Users\rites\source\repos\JaRites\Project_Calculator2\Project Calculator\bin\Debug\Project Calculator.exe.config
+C:\Users\rites\source\repos\JaRites\Project_Calculator2\Project Calculator\bin\Debug\Project Calculator.exe
+C:\Users\rites\source\repos\JaRites\Project_Calculator2\Project Calculator\bin\Debug\Project Calculator.pdb
+C:\Users\rites\source\repos\JaRites\Project_Calculator2\Project Calculator\obj\Debug\Project_Calculator.Form1.resources
+C:\Users\rites\source\repos\JaRites\Project_Calculator2\Project Calculator\obj\Debug\Project_Calculator.Properties.Resources.resources
+C:\Users\rites\source\repos\JaRites\Project_Calculator2\Project Calculator\obj\Debug\Project Calculator.csproj.GenerateResource.cache
+C:\Users\rites\source\repos\JaRites\Project_Calculator2\Project Calculator\obj\Debug\Project Calculator.csproj.CoreCompileInputs.cache
+C:\Users\rites\source\repos\JaRites\Project_Calculator2\Project Calculator\obj\Debug\Project Calculator.exe
+C:\Users\rites\source\repos\JaRites\Project_Calculator2\Project Calculator\obj\Debug\Project Calculator.pdb
